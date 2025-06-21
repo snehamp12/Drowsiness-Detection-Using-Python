@@ -1,11 +1,12 @@
-# DROWSINESS DETECTION WITH OPENCV
+# DROWSINESS DETECTION USING PYTHON
 ### Detects and Alerts if the driver is starting to doze off.
+### Real-Time Driver Alert System Using OpenCV and Dlib
 
 Very simple and effective blink detector using just Python, OpenCV and dlib.
 
 All thanks to Adrian Rosebrock (from [pyimagesearch](https://www.pyimagesearch.com/)) for making
 great tutorials. This project is inspired from his blog: [Drowsiness detection with OpenCV](https://www.pyimagesearch.com/2017/05/08/drowsiness-detection-opencv/).
-I have included the author's code and the one I wrote my self as well.
+I have included the author's code and the one I wrote myself as well.
 
 ## **Key Points**
 1. Steps involved:
@@ -32,7 +33,7 @@ I have included the author's code and the one I wrote my self as well.
 8. Used dlib's pre-trained face detector based on the modification of the standard **Histogram of Oriented Gradients + Linear SVM method** for object detection.
 9. Used opencv's convexHull function to determine the contour for the detected eye landmarks
 10. This method uses just the eye aspect ratio as the metric to determine if the driver's eyes are closed or open.
-11. We use **playsound** library to play sound in python. We also use seperate thread for playing sound
+11. We use **playsound** library to play sound in python. We also use separate thread for playing sound
 so that our main thread doesn't block and our script keeps on working and the sound will play in the background.
 12. Two important techniques used in this project:
     1. Facial Landmark Detection
@@ -51,6 +52,9 @@ so that our main thread doesn't block and our script keeps on working and the so
 	--shape-predictor shape_predictor_68_face_landmarks.dat \
 	--alarm alarm.wav
 ```
+🔗 **Download shape_predictor_68_face_landmarks.dat**  
+This file is required to run the script.  
+👉 [Click here to download from Google Drive](https://drive.google.com/file/d/1Slueph2g145-BygJIXkfclD6_ThWVtRa/view?usp=sharing)
 
 ## **Results:**
 The results are pretty accurate. We can see that it accurately and reliably detects if the driver
